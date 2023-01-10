@@ -5,14 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
-    font: 15px;
 
 }
 body
 {
-    background-image: url("images/bg-pattern-top-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url("images/bg-pattern-top-mobile.svg"),url("images/bg-pattern-bottom-mobile.svg");
+    background-position:  left top,right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
     padding: 4rem 2.4rem;
     width: 375px;
     min-height: 100vh;
@@ -93,6 +93,11 @@ h5
 {
     color: hsl(333, 80%, 67%);
 }
+
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 @media (width>376px) {
    body{
     background-image: url("images/bg-pattern-top-desktop.svg"),url("images/bg-pattern-bottom-desktop.svg");
@@ -103,7 +108,7 @@ h5
    } 
    main
    {
-    padding: 3rem  9rem;
+    padding: 3rem  10rem;
    }
    .main-top
    {    
@@ -117,7 +122,6 @@ h5
    .text
     {
         text-align: left;
-        margin: 1rem 15rem 0 0;
     }
     .text h1
     {
@@ -127,6 +131,33 @@ h5
     {   display: flex;
         gap: 2rem;
         width: 400px;
+        position: relative;
     }
-    
+    .rating1{
+        top: 10px;
+        right: 80px;
+    }
+    .rating2
+    {
+        right: 30px;
+    }
+    .card-items
+    {
+        position: relative;
+    }
+    .card-items:nth-child(2)
+    {
+        top: 15px;
+    }
+    .card-items:nth-child(3)
+    {
+        top: 25px;
+    }
+    h1
+    {
+        font-size: 50px;
+    }
+    p{
+        padding: 0 12rem 0 0;
+    }
 }
